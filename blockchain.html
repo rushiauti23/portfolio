@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume</title>
+  <title>Portfolio Details</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,14 +36,14 @@
   ======================================================== -->
 </head>
 
-<body class="resume-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">&lt;rush/&gt;</h1>
       </a>
 
@@ -51,7 +51,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="portfolio.html">Projects/Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -69,8 +69,9 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Resume</h1>
-              </div>
+              <h1>Block Chain</h1>
+              <p class="mb-0">This project is built on Java. This project is a dummy blockchain application.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -78,97 +79,88 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Resume</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
+        <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-            <div class="resume-item pb-0">
-              <h4>Rushikesh Auti</h4>
-              <p><em>I am a Experienced Java backend developer with around 2.8 years of Experience, specialized in developing the backend applications based on Spring MVC based frameworks. Along with this, I can also perform security analysis on web based applications and report or solve security vulnerabilities.</em></p>
-              <ul>
-                <li>Akurdi, Pune</li>
-                <li>+91 9890674108</li>
-                <li>rushiauti23@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Engineering</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Sinhgad College of Engineering, Vadgaon Bk, Pune</em></p>
-            </div><!-- Edn Resume Item -->
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="resume-item">
-              <h4>HSC</h4>
-              <h5>2015 - 2017</h5>
-              <p><em>Residential Junior College, Ahmednagar</em></p>
-            </div><!-- Edn Resume Item -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/blockchain.png" alt="">
+                </div>
 
-            <div class="resume-item">
-              <h4>SSC</h4>
-              <h5>2017</h5>
-              <p><em>Shriram Vidyalay, Pimpalgaon Malvi</em></p>
-            </div><!-- Edn Resume Item -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/blockchain1.webp" alt="">
+                </div>
 
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Java Backend Developer</h4>
-              <p><strong>2022 - Present</strong></p>
-              <p><em>Pune</em></p>
-              <p><em>Working Methodology: Agile</em></p>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
               <ul>
-                <h5>Role as a Java Developer</h5>
-                <li>Developement of backend service application based on Spring framework, Hibernate, JPA, PL/SQL</li>
-                <li>Maintaining the code quality to pass the SonarQube quality gates</li>
-                <li>Completed the internal training such as DevOps Excellence Engineer Program(DEEP). Security Ninja Program and Architect Ninja Program</li>
-                <li>Creation and configuration of SIT, UAT and PROD pipelines on Jenkins</li>
-                <li>Taking ARM approvals for projects to make sure applications are Security Compliants.</li>
-                <li>Resolution of Production issues raised by users with the help of Data Fix or EFIX deployments.</li>
-                <li>Resolving the Manual Penetration testing issues raised by other security ninjas for application</li>
+                <li><strong>Category</strong>: Cryptography</li>
+                <li><strong>Client</strong>: Self</li>
+                <li><strong>Project date</strong>: 01 August, 2024</li>
+                
               </ul>
-              <ul>
-                <h5>Role as a Security Ninja</h5>
-                <li>Static Application Security Analysis(SAST) of the application and Suppression of the false positive issues</li>
-                <li>Dynamic Application Security Analysis(DAST) and suppression</li>
-                <li>Detecting the VA-PT issues and their resolution</li>
-                <li>Performing Manual Penetration testing for other applications and reporting those security bugs in a central logging tool. Generation of PT reports</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Waiting for next recruiter.</h4>
-              
-            </div><!-- Edn Resume Item -->
-
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Blockchain in java</h2>
+              <h3>Purpose of this project: - </h3>
+              <p>
+                The idea behind this project is to learn the cryptography essentials and implement them 
+                to understand better.
+                <br>
+                I have used SHA-256 algorithm to create a digest of the block.
+                The link to the code is - https://github.com/rushiauti23/Blockchain
+              </p>
+            </div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Resume Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
       <h3 class="sitename">&lt;rush/&gt;</h3>
+     
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
